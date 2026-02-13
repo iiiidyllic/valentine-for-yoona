@@ -126,8 +126,11 @@ body {
 }
 
 #page3 img {
-  max-height: 200px;
+  max-height: 300px;
   width: 100%;
+  height: auto;
+  display: block;
+  margin: 10px auto;
   user-select: none;
 }
 
