@@ -1,42 +1,94 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>saro-rosy ❤️</title>
-  <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Short+Stack&amp;family=Homemade+Apple&amp;display=swap'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For My Valentine ❤️</title>
+
+  <!-- Google Font -->
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Short+Stack&family=Homemade+Apple&display=swap'>
+
+  <!-- 统一样式 -->
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<!-- Developed by Saravanan  -->
-<div class="paper heart">
-</div>
-<div class="paper image">
-  <p> and I fallen in</p>
-    <p>Love with You 😍 </p>
-   <img src="https://iili.io/HSzXpzg.jpg" />
-</div>
-<div class="paper image">
-  <p</p>
-  <img src="https://iili.io/HSzXbmF.jpg" />
-</div>
-<div class="paper image">
-  <p>How can be </p>
-   <p> someone so cute ❤️ </p>
-  <img src="https://iili.io/HSzXyXa.jpg" />
-</div>
-<div class="paper red">
-<p class="p1"> and My Favorite</p>
-<p class="p2">Person 😍</p>
-</div>
-<div class="paper">
-<p class="p1">You are Cute </p>
-  <p class="p1">Amazing <span style="color: red !important;">❤️</span></p>
-</div>
-<div class="paper">
-<p class="p1">Drag the papers to move!</p>
-</div>
-<!-- javascript file -->
-  <script  src="script.js"></script>
+  <!-- ================= PAGE 1 : ASK ================= -->
+  <section id="page1" class="page active">
+    <div class="container">
+      <h1>Will you be my Valentine? ❤️</h1>
+
+      <div class="buttons">
+        <button class="yes-button" onclick="handleYesClick()">Yes 💕</button>
+        <button class="no-button" onclick="handleNoClick()">No 😢</button>
+      </div>
+
+      <div class="gif_container">
+        <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbW5lenZyZHI5OXM2eW95b3pmMG40cWVrMDhtNjVuM3A4dGNxa2g2dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/VM1fcpu2bKs1e2Kdbj/giphy.gif" alt="Cute GIF">
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- ================= PAGE 2 : YES ================= -->
+  <section id="page2" class="page">
+    <div class="container">
+      <h1 class="header_text">Knew you would say yes! 😘</h1>
+
+      <div class="gif_container">
+        <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmo3c3l5ODh3ZGN6NHhhaDE2Mjg1ZjkwOXczdDFxbWM3dTBtaW9zaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/9XY4f3FgFTT4QlaYqa/giphy.gif">
+      </div>
+
+      <br>
+      <button onclick="showPage(3)">Open My Heart 💌</button>
+    </div>
+  </section>
+
+
+
+  <!-- ================= PAGE 3 : PAPER ================= -->
+  <section id="page3" class="page">
+
+    <!-- Paper animation (你原来的 CodePen 页面) -->
+    <div class="paper heart"></div>
+
+    <div class="paper image">
+      <p>and I fallen in</p>
+      <p>Love with You 😍</p>
+      <img src="https://iili.io/HSzXpzg.jpg" />
+    </div>
+
+    <div class="paper image">
+      <img src="https://iili.io/HSzXbmF.jpg" />
+    </div>
+
+    <div class="paper image">
+      <p>How can be</p>
+      <p>someone so cute ❤️</p>
+      <img src="https://iili.io/HSzXyXa.jpg" />
+    </div>
+
+    <div class="paper red">
+      <p class="p1">and My Favorite</p>
+      <p class="p2">Person 😍</p>
+    </div>
+
+    <div class="paper">
+      <p class="p1">You are Cute</p>
+      <p class="p1">Amazing <span style="color:red;">❤️</span></p>
+    </div>
+
+    <div class="paper">
+      <p class="p1">Drag the papers to move!</p>
+    </div>
+
+  </section>
+
+
+
+  <!-- JS -->
+  <script src="script.js"></script>
 </body>
 </html>
