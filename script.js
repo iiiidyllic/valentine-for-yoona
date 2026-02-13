@@ -49,11 +49,19 @@ function handleNoClick() {
 }
 
 function handleYesClick() {
-    // 隐藏 ask 页面
-    document.querySelector('.ask-container').style.display = "none";
+    const page1 = document.getElementById("page1");
+    const page2 = document.getElementById("page2");
 
-    // 显示 paper 页面
-    document.querySelector('.paper-container').style.display = "block";
+    page1.classList.remove("active");
+    page2.classList.add("active");
+}
+
+function goToPaper() {
+    const page2 = document.getElementById("page2");
+    const page3 = document.getElementById("page3");
+
+    page2.classList.remove("active");
+    page3.classList.add("active");
 }
 
 
